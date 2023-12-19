@@ -3,7 +3,6 @@ using namespace std;
 
 class binary
 {
-private:
     string s;
 
 public:
@@ -13,7 +12,7 @@ public:
     void display(void);
 };
 
-void binary :: read(void)
+void binary ::read(void)
 {
     cout << "Enter a binary number" << endl;
     cin >> s;
@@ -31,7 +30,7 @@ void binary::chk_bin(void)
     }
 }
 
-void binary :: ones_Complement(void)
+void binary ::ones_Complement(void)
 {
     for (int i = 0; i < s.length(); i++)
     {
@@ -45,14 +44,14 @@ void binary :: ones_Complement(void)
         }
     }
 }
-void binary :: display(void)
+void binary ::display(void)
 {
     cout << "Displaying your binary number" << endl;
     for (int i = 0; i < s.length(); i++)
     {
         cout << s.at(i);
     }
-    cout<<endl;
+    cout << endl;
 }
 int main()
 {
